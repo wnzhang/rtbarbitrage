@@ -5,7 +5,7 @@ This is a repository of the experiment code supporting the paper "Statistical Ar
 
 For any problems, please report the issues here or contact [Weinan Zhang](http://www0.cs.ucl.ac.uk/staff/w.zhang/).
 
-After pulling the repositoty, you could start from checking the single campaign arbitrage demo under the folder of scripts by running:
+After pulling the repository, you could start from checking the single campaign arbitrage demo under the folder of scripts by running:
 ```
 $ bash single_campaign_arbitrage_demo.sh 
 ```
