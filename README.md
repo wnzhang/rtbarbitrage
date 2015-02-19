@@ -23,6 +23,7 @@ prop	alpha	algo	profit	cvns	bids	imps	budget	cost	rratio	para	up
 16	0.00100	sam2	63.92	7	80000	4146	339072	68116	0.2	7.1	0.0000
 16	0.00100	sam2c	60.63	7	80000	4146	339072	71408	0.2	7.1	0.7942
 ```
+Note these results are produced from the very small data (the first 300,000 lines for campaign 1458 in iPinYou). 
 
 ### Multiple Campaign Arbitrage Demo
 For the demo of multiple campaign arbitrage with portfolio selection, please run:
@@ -51,7 +52,7 @@ prop	alpha	algo	profit	cvns	bids	imps	budget	cost	rratio	para	up
 16	0.10000	sam2	66.64	7	80000	3905	410481	65391	0.2	6.5	0.0000
 16	0.10000	sam2c	50.21	6	80000	3100	410481	62967	0.2	6.5	2.6962
 ```
-Note these results are produced from the very small data (the first 300,000 lines for each campaign in iPinYou). 
+Note these results are produced from the very small data (the first 300,000 lines for campaign portfolio [1458, 2259, 2261] in iPinYou). 
 
 ### Large-scale Experiment
 For the large-scale experiment, please first check our GitHub project [make-ipinyou-data](https://github.com/wnzhang/make-ipinyou-data) for pre-processing the iPinYou data. After downloading the dataset, by simplying `make all` you can generate the standardised data which will be used in the bid optimisation tasks.
