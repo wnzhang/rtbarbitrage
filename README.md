@@ -6,7 +6,7 @@ This is a repository of the experiment code supporting the paper "Statistical Ar
 For any problems, please report the issues here or contact [Weinan Zhang](http://www0.cs.ucl.ac.uk/staff/w.zhang/).
 
 ### Single Campaign Arbitrage Demo
-After pulling the repository, you could start from checking the single campaign arbitrage demo under the folder of scripts by running:
+After pulling the repository, you could start from checking the single campaign arbitrage demo under the folder of `scripts` by running:
 ```
 $ bash single_campaign_arbitrage_demo.sh 
 ```
@@ -23,7 +23,7 @@ prop	alpha	algo	profit	cvns	bids	imps	budget	cost	rratio	para	up
 16	0.00100	sam2	63.92	7	80000	4146	339072	68116	0.2	7.1	0.0000
 16	0.00100	sam2c	60.63	7	80000	4146	339072	71408	0.2	7.1	0.7942
 ```
-Note these results are produced from the very small data (the first 300,000 lines for campaign 1458 in iPinYou). 
+Note these results are produced from the very small data (the first 300,000 lines for campaign 1458 in iPinYou). Here alpha is a meaningless column for single campaign task.
 
 ### Multiple Campaign Arbitrage Demo
 For the demo of multiple campaign arbitrage with portfolio selection, please run:
@@ -52,7 +52,7 @@ prop	alpha	algo	profit	cvns	bids	imps	budget	cost	rratio	para	up
 16	2.00000	sam2	45.56	7	80000	4758	410481	86471	0.2	6.5	0.0000
 16	2.00000	sam2c	28.05	6	80000	3937	410481	85128	0.2	6.5	2.6962
 ```
-Note these results are based on the very small data sample (the first 300,000 lines for campaign portfolio [1458, 2259, 2261] in iPinYou). 
+Note these results are based on the very small data sample (the first 300,000 lines for campaign portfolio [1458, 2259, 2261] in iPinYou). Here alpha is the risk-averse parameter in campaign portfolio optimisation. We can observe that different alphas result in different arbitrage performance. More detailed information of the campaign portfolio selection can be accessed in `data/multiple.campaign.arbitrage.demo.portfolio.txt`.
 
 The code in the current version support the experiment in Sections 4.2 (single campaign) and 4.3 (multiple campaign). The dynamic multiple campaign arbitrage task can be based on re-running the multiple campaign code.
 
