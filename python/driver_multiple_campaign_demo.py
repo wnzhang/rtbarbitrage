@@ -22,14 +22,14 @@ if len(sys.argv) > 1:
         config.cpc_payoff_ratio = float(sys.argv[2])
 
 random.seed(10)
-config.alphas = [0.001, 0.1]
+config.alphas = [0.1, 2]
 config.budget_proportions = [16]
 config.data_folder = "../data/"
 
-print "stage-2 multi-cam driver"
-print str(config.campaigns)
-print str(config.bid_algorithms)
-print str(config.cpc_payoff_ratio)
+print "multiple campaign arbitrage driver"
+print "test campaign: " + str(config.campaigns)
+print "test algorithms:" + str(config.bid_algorithms)
+print "payoff ratio:" + str(config.cpc_payoff_ratio)
 
 cam_r = {}  # cam: payoff_cpc
 cam_v = {}  # cam: selection_probability
@@ -97,7 +97,7 @@ for cam in config.campaigns:
         min_test_length = cam_test_data_length[cam]
 dsp_original_cost_test /= len(config.campaigns)  # average cost
 config.volume = min_test_length
-print "avg cam original cost test: " + str(dsp_original_cost_test)
+print "average campaign original cost test: " + str(dsp_original_cost_test)
 print "test volume: " + str(config.volume)
 
 # rock!

@@ -26,10 +26,10 @@ config.data_folder = "../data/"
 config.budget_proportions = [16]
 
 
-print "single cam driver"
-print str(config.campaigns)
-print str(config.bid_algorithms)
-print str(config.cpc_payoff_ratio)
+print "single campaign arbitrage driver"
+print "test campaign: " + str(config.campaigns)
+print "test algorithms:" + str(config.bid_algorithms)
+print "payoff ratio:" + str(config.cpc_payoff_ratio)
 
 cam_r = {}  # cam: payoff_cpc
 cam_v = {}  # cam: selection_probability

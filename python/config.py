@@ -27,7 +27,7 @@ bid_algorithms = ["const", "rand", "truth", "lin", "ortb", "sam1", "sam2"]
 volume = 300000
 budget_proportions = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024] #, 2048, 4096, 8192, 16384] #[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024] # 16, 64, 256]
 algo_paras = {
-    "const": range(5, 200, 12),
+    "const": range(5, 300, 18),
     "rand": range(5, 400, 24),
     "truth": [1],
     "lin": range(5, 150, 5),
