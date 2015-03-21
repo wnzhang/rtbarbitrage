@@ -8,7 +8,7 @@ For any problems, please report the issues here or contact [Weinan Zhang](http:/
 ### Single Campaign Arbitrage Demo
 After pulling the repository, you could start from checking the single campaign arbitrage demo under the folder of `scripts` by running:
 ```
-$ bash single_campaign_arbitrage_demo.sh 
+$ bash single_campaign_arbitrage_demo.sh
 ```
 After running, you could get the performance table printed in the console like:
 ```
