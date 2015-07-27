@@ -131,7 +131,38 @@ def simulate_one_bidding_strategy_with_parameter(cam_data, cam_data_length, cam_
     alpha = "uniform"
     if config.alpha != "uniform":
         alpha = "%.5f" % config.alpha
-    return "%s\t%s\t%s\t%.2f\t%d\t%d\t%d\t%d\t%d\t%.1f\t%s\t%.4f" % (tag, alpha, algo, profit, clks, bids, imps,
-                                                     dsp_budget, cost, config.cpc_payoff_ratio, para, cm_up_value)
+    #return "%s\t%s\t%s\t%.2f\t%d\t%d\t%d\t%d\t%d\t%.1f\t%s\t%.4f" % (tag, alpha, algo, profit, clks, bids, imps,
+    #                                                dsp_budget, cost, config.cpc_payoff_ratio, para, cm_up_value)
+    return "{tag:>4}\t{alpha:>7.5f}\t{algo:>4}\t{profit:>6.2f}\t{clks:>3}\t{bids:>7}\t{imps:>7}" \
+           "{budget:>9}\t{cost:>9}\t{rratio:>3.1f}\t{para:4.1f}\t{up:>6.4f}".format(
+        tag = tag,
+        alpha = alpha,
+        algo = algo,
+        profit = profit,
+        clks = clks,
+        bids = bids,
+        imps = imps,
+        budget = dsp_budget,
+        cost = cost,
+        rratio = config.cpc_payoff_ratio,
+        para = para,
+        up = cm_up_value
+    )
 
-header = "prop\talpha\talgo\tprofit\tcvns\tbids\timps\tbudget\tcost\trratio\tpara\tup"
+#header = "prop\talpha\talgo\tprofit\tcvns\tbids\timps\tbudget\tcost\trratio\tpara\tup"
+
+header = "{tag:>4}\t{alpha:>7.5f}\t{algo:>4}\t{profit:>6.2f}\t{clks:>3}\t{bids:>7}\t{imps:>7}" \
+           "{budget:>9}\t{cost:>9}\t{rratio:>3.1f}\t{para:4.1f}\t{up:>6.4f}".format(
+        tag = 'tag',
+        alpha = 'alpha',
+        algo = 'algo',
+        profit = 'profit',
+        clks = 'cnvs',
+        bids = 'bids',
+        imps = 'imps',
+        budget = 'budget',
+        cost = 'cost',
+        rratio = 'rratio',
+        para = 'para',
+        up = 'up'
+    )
