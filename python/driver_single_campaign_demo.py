@@ -110,7 +110,7 @@ for proportion in config.budget_proportions:
         #print algo
         config.algo_one_para[algo] = m_step_bid_optimisation.m_step(cam_train_data, cam_train_data_length, cam_r, cam_base_ctr,
                             dsp_budget, config.volume, config.dsp_l, cam_v, config.algo_paras, algo)
-    print "\nm-step algo_one_para = " + str(config.algo_one_para)
+    #print "\nm-step algo_one_para = " + str(config.algo_one_para)
 
     # test
     print header
