@@ -3,7 +3,7 @@ Statistical Arbitrage Mining for Display Advertising
 
 <img src=http://www0.cs.ucl.ac.uk/staff/w.zhang/pics/sam.png width=600/>
 
-In real-time bidding (RTB) display advertising, advertisers could choose to pay by performance, e.g., pay per action (CPA), pay per sale (CPS), while publishers normally prefer earning by volume, i.e., selling CPM ad inventories. In such case, the intermediaries, e.g., DSPs or ad networks need to take risk to buy CPM ad inventories from publishers and earn CPA payoff from advertisers. Although this is definitely a non-trivial business, there exist statistical arbitrage opportunities for the intermediaries to maximise their net profit with control risk.
+In real-time bidding (RTB) display advertising, advertisers could choose to pay by performance, e.g., pay per action (CPA), pay per sale (CPS), while publishers normally prefer earning by volume, i.e., selling CPM ad inventories. In such case, the intermediaries, e.g., DSPs or ad networks need to take risk to buy CPM ad inventories from publishers and earn CPA payoff from advertisers. Although this is definitely a non-trivial business, there exist statistical arbitrage opportunities for the intermediaries to maximise their net profit with controlled risk.
 
 This is a repository of the experiment code supporting the paper [Statistical Arbitrage Mining for Display Advertising](http://www0.cs.ucl.ac.uk/staff/w.zhang/papers/sam-kdd.pdf) in KDD 2015.
 
